@@ -15,7 +15,7 @@ const TodoList = () => {
             };
             setItems(items.concat(newItem))
         }
-        inputElement = "";
+        inputElement.value = "";
     }
 
     const deleteItem = (key) => {

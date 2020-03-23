@@ -1,10 +1,15 @@
 body {
     padding: 50px;
-    background-color: #66ccff;
+    background-color: #2E323C;
     font-family: sans-serif;
+    color:#DDE2E3;
 }
 
 #container {
     display: flex;
     justify-content: center;
+    border: 2px solid #DDE2E3; 
+    width: 500px;
+    margin: auto; 
+    background-color: #2B4251; 
 }
