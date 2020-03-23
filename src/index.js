@@ -7,6 +7,7 @@ var destination = document.querySelector("#container")
 
 ReactDOM.render(
     <div>
+        <h1 align="center">To Do</h1>
         <TodoList />
     </div>,
     destination

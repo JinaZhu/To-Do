@@ -1,4 +1,6 @@
 import React, { useState, useRef } from "react";
+import TodoItems from "./TodoItems";
+import "./TodoList.css";
 
 const TodoList = () => {
     const [items, setItems] = useState([])
@@ -14,8 +16,11 @@ const TodoList = () => {
             setItems(items.concat(newItem))
         }
         inputElement = "";
-        console.log(items)
+    }
 
+    const deleteItem = (key) => {
+        var filteredItems = items.filter(item => item.key !== key)
+        setItems(filteredItems)
     }
     return (
         <div className="todoListMain">
@@ -26,6 +31,7 @@ const TodoList = () => {
                     <button type="submit">add</button>
                 </form>
             </div>
+            <TodoItems entries={items} remove={deleteItem} />
         </div>
     )
 
